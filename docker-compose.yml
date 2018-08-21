@@ -13,6 +13,6 @@ services:
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_MESSAGE_MAX_BYTES: 2000000
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'true'
-      LOG4J_LOGGER_KAFKA_AUTHORIZER_LOGGER=DEBUG, authorizerAppender
+      LOG4J_LOGGER_KAFKA_AUTHORIZER_LOGGER: 'DEBUG, authorizerAppender'
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
